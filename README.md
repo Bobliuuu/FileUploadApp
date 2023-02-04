@@ -1,6 +1,6 @@
 # FileUploadApp
 
-![image](/assets/demo.png)
+![image](./assets/fileuploadapp.png)
 
 A web application that can accept any type of file, save it to a web server, and display the names of the file to the screen.
 This was designed with feasibility, UI/UX, and latency in mind. 
