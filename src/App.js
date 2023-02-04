@@ -18,11 +18,11 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore();
 
 // Not used
-function toSQL() {
+function toSQL(name, value) {
   const sql = `
-    CREATE TABLE IF NOT EXISTS users (name TEXT, email TEXT);
-    INSERT INTO users (name, email)
-    VALUES ('name', 'email');
+    CREATE TABLE IF NOT EXISTS users (name TEXT, value TEXT);
+    INSERT INTO users (name, value)
+    VALUES (`${name}, ${value}`);
   `;
   db.run(sql);
 
